@@ -12,7 +12,7 @@ html,body{
     clear: both;
 }
 .container{
-    max-width: 1280px;
+    max-width: 1480px;
     margin: 0 auto;
 }
 /*Header*/
@@ -34,7 +34,6 @@ header nav.mobile-menu{
     height: 48px;
     background-image: url(../imagens/computer.png);
     background-size: 100% 100%;
-    margin-top: 20px;
 }
 header nav.mobile-menu ul{
     width: 100%;
@@ -86,7 +85,7 @@ header nav.desktop-menu li:hover{
 .img-mosaico{
     width: 100%;
     padding-top: 100%;
-    background-color: sandybrown;
+    background-size: 100% 100%;
     border: 5px solid white;
     border-radius: 20px;
 }
@@ -160,8 +159,13 @@ section.perfil-container .perfil-wraper-2{
 section.perfil-container .img-perfil{
     width: 30%;
     height: 100%;
-    background-image: url(../imagens/img_perfil.png);
+    background-color: black;
     background-size: 100% 100%;
+}
+section.perfil-container .img-perfil p{
+    text-align: center;
+    margin-top: 50%;
+    color: white;
 }
 section.perfil-container .texto-perfil{
     width: 70%;
@@ -176,6 +180,214 @@ section.perfil-container .texto-perfil p{
     text-align: justify;
     font-size: 14px;
     margin-top: 14px;
+}
+
+/**Vídeo**/
+section.video{
+    padding: 50px 0;
+}
+section.video .box-video{
+    float: left;
+    width: 33.33%;
+    border: 2px solid whitesmoke;
+    padding-top: calc(33.33% * 0.6);
+    position: relative;
+}
+section.video iframe{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
+/**Tratamento**/
+
+section.tratamentos .tratamento-container{
+    float: left;
+    width: 33.33%;
+}
+section .title h2{
+    text-align: center;
+    font-size: 18px;
+    color: #698293;
+    padding: 60px 0;
+}
+section.tratamentos .tratamento-single{
+    padding: 20px;
+}
+section.tratamentos .tratamento-single h2{
+    font-size: 18px;
+    color: #737373;
+}
+section.tratamentos .tratamento-single p{
+    font-size: 14px;
+    color: #b4b4b4;
+    padding: 10px 0;
+}
+
+/**Depoimento**/
+
+section.depoimentos h2{
+    text-align: center;
+    font-size: 18px;
+    color: #688293;
+    padding-top: 80px;
+}
+section.depoimentos .container{
+    text-align: center;
+    max-width: 600px;
+}
+section.depoimentos .depoimento-single{
+    padding: 40px 2%;
+}
+section.depoimentos .depoimento-single quote{
+    font-size: 15px;
+    color: #b4b4b4;
+}
+section.depoimentos .nome-depoimento{
+    padding: 20px 0;
+}
+section.depoimentos .nome-depoimento img{
+    width: 36px;
+    height: 36px;
+}
+section.depoimentos .nome-depoimento span{
+    font-size: 13px;
+    color: #b4b4b4;
+    vertical-align: 12px;
+}
+
+/**Sociais**/
+
+section.sociais .insta{
+    float: left;
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
+    background-color: #98a5ae;
+}
+section.sociais .insta p{
+    color: white;
+    font-size: 13px;
+    line-height: 20px;
+}
+section.mosaico-social{
+    float: left;
+    width: 100%;
+}
+.img-mosaico-social{
+    float: left;
+    width: calc(100% / 8);
+    padding-top: calc(100% / 9);
+    background-size: 100% 100%;
+    border: 2px solid white;
+}
+section.sociais .face{
+    float: left;
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
+    background-color: #576975;
+}
+section.sociais .face p{
+    color: white;
+    font-size: 13px;
+    line-height: 20px;
+}
+/**Formulário de Contato**/
+
+section.formulario{
+    padding: 60px 2%;
+}
+section.formulario h2{
+    text-align: center;
+    color: #698293;
+    font-size: 18px;
+}
+section.formulario form{
+    width: 100%;
+    margin: 40px auto;
+    max-width: 500px;
+}
+section.formulario .form-wraper{
+    float: left;
+    margin-top: 10px;
+    padding: 0 5px;
+}
+section.formulario .form-wraper span{
+    font-size: 15px;
+    color: #b4b4b4;
+}
+section.formulario .w100{
+    width: 100%;
+}
+section.formulario .w50{
+    width: 50%;
+}
+section.formulario .w100 input[type=text]{
+    width: 100%;
+    height: 35px;
+    padding-left: 6px;
+    line-height: 35px;
+    border: 1px solid #dadada;
+    border-radius: 12px;
+    margin-top: 8px;
+}
+section.formulario .w50 input[type=text]{
+    width: 100%;
+    height: 35px;
+    padding-left: 6px;
+    line-height: 35px;
+    border: 1px solid #dadada;
+    border-radius: 12px;
+    margin-top: 8px;
+}
+section.formulario .w100 textarea{
+    width: 100%;
+    height: 121px;
+    padding-left: 6px;
+    line-height: 35px;
+    border: 1px solid #dadada;
+    border-radius: 12px;
+    margin-top: 8px;
+    resize: none; /**Tira opção de redimensionar caixa de texto**/
+}
+
+section.formulario .button input[type=submit]{
+    margin-top: 30px;
+    width: 100px;
+    height: 35px;
+    background-color: #688293;
+    border: 1px solid #dadada;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); /**As 3 ultimas caracteristicas alinham o item no meio**/
+    -ms-transform: translateX(-50%); /**Para não bugar em internet explorer**/
+}
+
+/**Footer**/
+
+footer.rodape{
+    padding: 40px 2%;
+    background-color: #688293;
+    text-align: center;
+}
+footer.rodape .footer-block{
+    float: left;
+    width: 33.33%;
+}
+footer.rodape .footer-block h2{
+    font-size: 18px;
+    color: #ffffff;
+}
+footer.rodape .footer-block p{
+    font-size: 14px;
+    margin-top: 8px;
+    color: #ffffff;
 }
 
 
@@ -197,20 +409,31 @@ section.perfil-container .texto-perfil p{
         text-decoration: none;
         margin: 0 20px;
     }
-
+    section.perfil-container .perfil-wraper{
+        padding-top: 0;
+    }
     section.perfil-container .perfil-wraper-2{
     display: inline-block;
     text-align: center;
+    height: auto;
+    position: static;
     } 
     section.perfil-container .img-perfil{
-    width: 40%;
+    width: 70%;
     display: inline-block;
-    padding-top: 50%;
+    padding-top: 100%;
     margin-top: 40px;
     }
     section.perfil-container .texto-perfil{
     display: inline-block;
     width: 100%;
+    }
+    .img-mosaico-social{
+        width: calc(100% / 4);
+        padding-top: calc(100% / 4);
+    }
+    .mosaico-social > div:nth-of-type(1n+5){
+        display: none;
     }
 
 }
@@ -236,18 +459,48 @@ section.perfil-container .texto-perfil p{
         padding: 30px 2%;
         background-color: #576975;
     }
+    section.perfil-container .perfil-wraper{
+        padding-top: 0;
+    }
     section.perfil-container .perfil-wraper-2{
         display: inline-block;
         text-align: center;
+        height: auto;
+        position: static;
     } 
     section.perfil-container .img-perfil{
-        width: 40%;
+        width: 70%;
         display: inline-block;
-        padding-top: 40%;
+        padding-top: 100%;
         margin-top: 40px;
     }
     section.perfil-container .texto-perfil{
         display: inline-block;
         width: 90%;
+    }
+    section.video .box-video{
+        float: none;
+        margin: 0 auto;
+        width: 80%;
+        border: 2px solid white;
+        padding-top: calc(100% * 0.6);
+        position: relative;
+    }
+    footer.rodape .footer-block{
+        float: none;
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+}
+
+@media screen and (max-width: 580px){
+    section.video .box-video{
+        float: none;
+        margin: 0 auto;
+        width: 90%;
+        border: 2px solid white;
+        padding-top: calc(100% * 0.6);
+        position: relative;
     }
 }
